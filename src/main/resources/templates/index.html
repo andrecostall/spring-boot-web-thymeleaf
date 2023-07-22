@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+</head>
+<body  style=text-align:center;background-color:blue;font-weight:900;font-size:20px;font-family:Helvetica,Arial,sans-serif>
+
+    <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png">
+    <h1> Welcome to my custom webpage hosted in a Docker container </h1>
+    <p> This container was deployed: <h1 th:text="${date_hour}"></h1></p>
+    <p> This container name: <h1 th:text="${hostname}"></h1></p>
+    <p> This container IP: <h1 th:text="${ip_address}"></h1></p>
+
+</body>
+</html>
